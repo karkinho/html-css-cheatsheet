@@ -180,3 +180,28 @@ Similar ao grid-column mas para as linhas ao inves de colunas
 ## grid-area
 
 Define o grid-column e grid-row no mesmo atributo, grid-area: column / row;
+
+# flex
+
+Defina display: flex;
+Maioria dos comandos de grid funcionam no flexbox
+
+## flex-wrap
+
+Define se os conteudos vão ser distribuidos em varias linhas ou se vão quebrar o conteudo para caber em uma tela que não cabem.
+
+## flex-grow
+
+Defini se o elemento deve crescer para ocupar o espaço em branco, 0 impede o crescimento e valores acima haverá crecimento.
+
+## flex-basis
+
+Valor inicial antes de distribuir o espaço.
+
+## flex-shrink
+
+Caso exista um valor base ele determinará se o elemento pode ser reduzido ou não, 0 significa que não pode ser reduzido.
+
+## flex
+
+flex: 1; atalho para flex-grow: 1; flex-shrink: 1; flex-basis: 0;
