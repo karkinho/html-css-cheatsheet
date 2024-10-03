@@ -145,3 +145,5 @@ space-evenly, space-around, space-between.
 ## place-content
 
 Uma tag que define as duas acima, recebendo dois atributos, o primeiro sendo o align-content e o segundo justify-content, se só passar um irá aplicar para os dois.
+
+## grid-column
