@@ -205,3 +205,21 @@ Caso exista um valor base ele determinará se o elemento pode ser reduzido ou n�
 ## flex
 
 flex: 1; atalho para flex-grow: 1; flex-shrink: 1; flex-basis: 0;
+
+# Positions
+
+Servem para posicionar os elementos de mais formas.
+Defina position: Type;
+Tag usuais são top, bottom, right, left.
+
+## fixed
+
+Deixa o elemento preso em uma posição da tela sem ser afetado pelo scroll, exemplo aquelas barras de cookies em sites.
+
+## relative
+
+O elemento pode ser alterado apartir do ponto no qual ele estavá originalmente, ele ainda ocupará o espaço que ele ocuparia sem as mudanças do posicionamento.
+
+## absolute
+
+Se ele não tiver um elemento pai com position: relative; ele tratará seu ponto de origem sendo o top left, se ele tiver um elemento pai configura com relative ele tratará sua posição original como seu ponto de origem.
