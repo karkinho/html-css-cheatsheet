@@ -223,3 +223,7 @@ O elemento pode ser alterado apartir do ponto no qual ele estavá originalmente,
 ## absolute
 
 Se ele não tiver um elemento pai com position: relative; ele tratará seu ponto de origem sendo o top left, se ele tiver um elemento pai configura com relative ele tratará sua posição original como seu ponto de origem.
+
+## z-index
+
+Define a sobreposição de elementos, qual irá ficar por cima e qual por baixo, naturalmento o html segue a ordem no qual as tags foram escritas, contudo utilizando z-index podemos ter um controle sobre isso, o elemento de valor maior ficará no topo e o de menor abaixo.
