@@ -1,5 +1,4 @@
-Markup : # Heading 1 #
-Tags
+Markup : # Heading 1 # Tags
 
 Markup : ## p ##
 Para conteudo em texto, modo de display inline.
