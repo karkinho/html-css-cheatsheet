@@ -66,6 +66,10 @@ Adiciona padding a elementos.
 
 Adiciona uma borda a os elementos, border: size style color;.
 
+## border-width
+
+Define a largura da borda já colocada.
+
 # Top Right Bottom Left
 
 No caso de algumas estilizações como margin, padding e border, podemos querer valores diferentes em diferentes extremidades do elemento.
