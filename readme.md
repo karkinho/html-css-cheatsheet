@@ -70,6 +70,14 @@ Adiciona uma borda a os elementos, border: size style color;.
 
 Define a largura da borda já colocada.
 
+## text-align
+
+Define o alinhamento do texto justificado, centralizado e etc.
+
+## border-radius
+
+Adiciona uma borda arredondada recebendo o raio da borda.
+
 # Top Right Bottom Left
 
 No caso de algumas estilizações como margin, padding e border, podemos querer valores diferentes em diferentes extremidades do elemento.
@@ -80,11 +88,11 @@ Com quatro variaveis a aplicação será: margin top right bottom left.
 
 ## Id
 
-Tags podem receber um id unico assim alterando o seu estilo, a tag receberá id="nome_do_id", e o id será definido no css por .nome_do_id { estilização }.
+Tags podem receber um id unico assim alterando o seu estilo, a tag receberá id="nome_do_id", e o id será definido no css por #nome_do_id { estilização }.
 
 ## Class
 
-Tags podem receber varias classes alterando o seu estilo, a tag receberá class="classe1 classe2" assim recebendo os estilos de cada classe, a classe no css por #nome_da_classe { estilização }.
+Tags podem receber varias classes alterando o seu estilo, a tag receberá class="classe1 classe2" assim recebendo os estilos de cada classe, a classe no css por .nome_da_classe { estilização }.
 
 ## Estilização Sem Id ou Class
 
@@ -102,3 +110,38 @@ Elementos block utilizão de parametros passados pelo css para definir sua exibi
 # inline-block
 
 Utilizado para que elementos inline recebam estilização de tamanho e posicionamento.
+
+# grid item
+
+Um grid item tem um container definido para sí, que inclui o tamanho de margin, e os elementos dependendo da sua natureza iram ou não praencher todo o conteiner.
+
+# grid columms
+
+Modo de exibição dos itens em colunas.
+Defina display: grid;
+As margens não se sobrepoem uma sobre as outras elas se somam, porque o grid da aos elementos um block no qual eles ocupam, já incluindo a margem.
+
+## grid-template-columns
+
+E de os espaçamentos de cada coluna com grid-template-columns: 1fr 1fr;
+Não utilize porcentagem para definir o tamanho das colunas, utilize fr que é uma medida que pega o restante de tamanho e divide de acordo com os pesos
+
+## gap
+
+Define o gap entre os elementos, se houver margin nesses elementos irá somar a elas.
+
+## align-content
+
+Define o alinhamento dos conteudos na vertical.
+Nescessita ter o espaço para fazer o alinhamento.
+space-evenly, space-around, space-between.
+
+## justify-content
+
+Define o alinhamento dos conteudos na horizontal.
+Nescessita ter o espaço para fazer o alinhamento.
+space-evenly, space-around, space-between.
+
+## place-content
+
+Uma tag que define as duas acima, recebendo dois atributos, o primeiro sendo o align-content e o segundo justify-content, se só passar um irá aplicar para os dois.
