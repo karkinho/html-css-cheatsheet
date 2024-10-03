@@ -1,9 +1,10 @@
-Markup : # Tags #
+Markup : # Heading 1 #
+Tags
 
-Markup : ## <p></p> ##
+Markup : ## p ##
 Para conteudo em texto, modo de display inline.
 
-Markup : ## <h1></h1> ##
+Markup : ## h1 ##
 Para conteudo em texto sendos as headings do site, modo de display inline.
 
 Markup : # Id e Class #
