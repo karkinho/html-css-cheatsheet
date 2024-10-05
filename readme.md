@@ -1,30 +1,98 @@
 # Tags HTML
 
+O html deve ser feito de forma a conter o conteudo de forma semantica, sem se preucupar com estilização.
+
 ## p
 
 Para conteudo em texto, modo de display inline.
+Semantica: paragrafo, conteudo em texto.
 
 ## span
 
 Tag que conterá conteudos de qualquer tipo, modo de display inline.
+Semantica: none.
 
 ## h1, h2, h3, h4, h5 e h6
 
 Para conteudo em texto sendo as headings do site, modo de display inline.
+Semantica: Titulos.
 
 ## a
 
 Tag para utilização de links, sejam eles locais ou online os recebendo atraves do atributo { href = "link" }, entre as tags de abertura e fechamento se coloca um conteudo no qual o seu click resultará no acesso do link, modo de display inline.
+Semantica: Links.
 
 ## img
 
 Utilizada para inserir imagens no site, recebendo dois atributos { src="link" alt="para caso a imagem não carrege"}, essa tag é uma tag sem fechamento só tendo a tag de abertura com um / no final, modo de display block.
+Semantica: Imagens.
 
 ## div
 
 Tag que conterá conteudos de qualquer tipo, utilizada para a organização do site em blocos para melhor posicionamento, modo de display block.
+Semantica: None.
+
+## ul
+
+Semantica:Lista não ordenada.
+
+## ol
+
+Semantica: Listas ordenadas.
+
+## dl
+
+Semantica: Lista de definições.
+Se defini o elemento com dt.
+E abaixo se dá a descrição com dd.
+
+# Tags Landmarks HTML
+
+Funcionam como se fosse uma div, contudo com valor semantico.
+
+## aria-label
+
+Serve para dar uma descrição para landmarks, ajuda a dar mais sentido a cada secção.
+
+## aria-labeledby
+
+Recebe o id de alguma tag e o aria-label será a informação que está nesse conteudo, e ele não será repetido duas vezes.
+
+## main
+
+Serve para localizar o conteudo principal do site.
+
+## nav
+
+Serve para envolver uma navegação do site.
+
+## article
+
+Encapsular um conteudo que por si só faz sentido sem o seu entorno.
+Cria e não cria landmarks, por si só no html não é um landmark mas nos leitores de tela utiliza como.
+
+## section
+
+Utilizado para agrupar elementos similares.
+Não cria landmark;
+
+## aside
+
+Demarca um conteudo complementar ao principal.
+
+## header
+
+Demarca o cabeçalho do site, o banner.
+Dentro de outras landmarks se torna o banner somente daquele conteudo.
+
+## footer
+
+Demarca o rodapé do site.
+Dentro de outras landmarks se torna o rodapé somente daquele conteudo.
 
 # Tags CSS
+
+Serve para definir a estilização do site.
 
 ## background
 
@@ -77,6 +145,10 @@ Define o alinhamento do texto justificado, centralizado e etc.
 ## border-radius
 
 Adiciona uma borda arredondada recebendo o raio da borda.
+
+## list-style
+
+Define a estilização da lista.
 
 # Top Right Bottom Left
 
@@ -227,3 +299,18 @@ Se ele não tiver um elemento pai com position: relative; ele tratará seu ponto
 ## z-index
 
 Define a sobreposição de elementos, qual irá ficar por cima e qual por baixo, naturalmento o html segue a ordem no qual as tags foram escritas, contudo utilizando z-index podemos ter um controle sobre isso, o elemento de valor maior ficará no topo e o de menor abaixo.
+
+# img fill grid container
+
+Tendo uma imagem dentro de um grid naturalmente ela nao ocupará todo o espaço por padrão, então envolvemos em uma div com as configurações abaixo.
+
+div {
+display: flex;
+flex-wrap: wrap;
+}
+
+div img {
+max-width: 100%;
+height: auto;
+flex: 1 1 auto;
+}
