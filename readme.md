@@ -46,6 +46,28 @@ Semantica: Lista de definições.
 Se defini o elemento com dt.
 E abaixo se dá a descrição com dd.
 
+## blockquote
+
+Semantica: Usado para criar uma citação para o conteudo que ele encapsula.
+cite = "link".
+
+## q
+
+Semantica: Citação dentro de uma frase, com estilo basico coloca em aspas.
+cite = "link".
+
+## cite
+
+Semantica: Para citar o nome de uma obra.
+
+## em
+
+Semantica: Para dar enfasi ao conteudo.
+
+## strong
+
+Semantica: Para dar importancia ao conteudo.
+
 # Tags Landmarks HTML
 
 Funcionam como se fosse uma div, contudo com valor semantico.
