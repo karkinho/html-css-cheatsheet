@@ -112,13 +112,57 @@ Dentro de outras landmarks se torna o banner somente daquele conteudo.
 Demarca o rodapé do site.
 Dentro de outras landmarks se torna o rodapé somente daquele conteudo.
 
+# Unidades
+
+## px
+
+Unidade em pixels.
+
+## rem
+
+Uma unidade que equivale a 16px normalmente, o rem é um valor definido pelo browser/html que ajuda na acessibilidade.
+
+Pode ser alterado utilizando:
+
+html {
+font-size: size;
+}
+
+## em
+
+Uma unidade que equivale a o font size dos elementos pai.
+
 # Tags CSS
 
 Serve para definir a estilização do site.
 
-## background
+## background-color
 
 Define a cor do background.
+
+## backgroun-image
+
+define o background como sendo uma imagem, existindo uma repetição infinita dessa imagem.
+
+### linear-gradient
+
+Cria um gradiente linear entre cores.
+
+### radial-gradient
+
+Cria um gradiente radial entre cores.
+
+## background-repeat
+
+Define se o background vai se repetir infinitamente ou não.
+
+## background-size
+
+Define o tamanho da imagem, contain e cover dão uma capacidade de resize boa.
+
+## background-positon
+
+Define o posicionamento do background.
 
 ## font-size
 
@@ -135,6 +179,34 @@ Define a cor do conteudo, geralmente usado para colorir texto.
 ## font-family
 
 Define o tipo de fonte que será utlizada.
+
+## font-weight
+
+Define o peso da escrita, se a fonte está em negrito ou não falando de uma forma chula, dependendo da fonte talvez não existam alguns peso.
+
+## font-style
+
+O estilo da fonte se está em italico, oblico e etc.
+
+## line-height
+
+A altura da linha do texto.
+
+## text-transform
+
+Altera o texto para maiusculo ou minusculo e outras opções.
+
+## text-indent
+
+A identação do texto.
+
+## text-shadow
+
+Coloca uma sombra no texto, não utilize.
+
+## letter-spacing
+
+Espaçamento entre as letras.
 
 ## display
 
@@ -177,6 +249,30 @@ Define a estilização da lista.
 No caso de algumas estilizações como margin, padding e border, podemos querer valores diferentes em diferentes extremidades do elemento.
 Com duas variaveis a aplicação será: margin top/bottom right/left.
 Com quatro variaveis a aplicação será: margin top right bottom left.
+
+# Pseudo element
+
+Vem sem nenhuma estilização ou diplay, então defina quando for utilizar.
+
+## tag::before{}
+
+Cria um conteudo apartir do css antes do elemento.
+
+## tag::after{}
+
+Cria um conteudo apartir do css depois do elemento.
+
+## tag::firstline{}
+
+Estiliza a primeira linha.
+
+## tag::firstletter{}
+
+Estiliza a primeira letra.
+
+## content
+
+Define o conteudo.
 
 # Id e Class
 
