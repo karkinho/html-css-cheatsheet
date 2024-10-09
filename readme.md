@@ -270,6 +270,10 @@ Estiliza a primeira linha.
 
 Estiliza a primeira letra.
 
+## tag:hover
+
+Altera o elmento quando hover.
+
 ## content
 
 Define o conteudo.
@@ -431,4 +435,22 @@ div img {
 max-width: 100%;
 height: auto;
 flex: 1 1 auto;
+}
+
+# hover with tab on the side
+
+tag:hover {
+border-left: 10px solid #c6c6c6;
+}
+
+# how add border on hover witout jiggle
+
+Defina uma borda no elemento original com cor transparente e no hover coloque a cor.
+
+tag {
+border: 2px solid transparent;
+}
+
+tag:hover {
+border: 2px solid #ee2211;
 }
