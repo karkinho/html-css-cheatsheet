@@ -506,34 +506,40 @@ Define a sobreposição de elementos, qual irá ficar por cima e qual por baixo,
 
 Tendo uma imagem dentro de um grid naturalmente ela nao ocupará todo o espaço por padrão, então envolvemos em uma div com as configurações abaixo.
 
+```css
 div {
-display: flex;
-flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div img {
-max-width: 100%;
-height: auto;
-flex: 1 1 auto;
+  max-width: 100%;
+  height: auto;
+  flex: 1 1 auto;
 }
+```
 
 # hover with tab on the side
 
+```css
 tag:hover {
-border-left: 10px solid #c6c6c6;
+  border-left: 10px solid #c6c6c6;
 }
+```
 
 # how add border on hover witout jiggle
 
 Defina uma borda no elemento original com cor transparente e no hover coloque a cor.
 
+```css
 tag {
-border: 2px solid transparent;
+  border: 2px solid transparent;
 }
 
 tag:hover {
-border: 2px solid #ee2211;
+  border: 2px solid #ee2211;
 }
+```
 
 # alinhar bloco de tamanho maximo definido no centro da tela
 
