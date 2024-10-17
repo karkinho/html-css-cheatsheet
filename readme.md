@@ -68,6 +68,13 @@ Semantica: Para dar enfasi ao conteudo.
 
 Semantica: Para dar importancia ao conteudo.
 
+## Meta tag
+
+### viewport
+
+content = "widht=device-width, initial-scale=1"
+Essa tag definirá o tamanho da view port e seus nivel de zoom inicial, recebendo as variaveis acima.
+
 # Tags Landmarks HTML
 
 Funcionam como se fosse uma div, contudo com valor semantico.
@@ -131,6 +138,10 @@ font-size: size;
 ## em
 
 Uma unidade que equivale a o font size dos elementos pai.
+
+## ch
+
+Valor da largura da tipografia do caracter 0.
 
 # Tags CSS
 
@@ -244,11 +255,74 @@ Adiciona uma borda arredondada recebendo o raio da borda.
 
 Define a estilização da lista.
 
+## @media
+
+```css
+@media (max-width: 600px) {
+  div {
+    grid-template-coluns: 1fr;
+  }
+}
+```
+
+Um if dentro do css, muito utilizado para adicionar responsividade no site, utilizando max-width e min-width se pode definir a espressão, tambem se pode utilizar screen, print dentre outros, recebe operadores logicos como and e or.
+
+## object-fit
+
+Serve para o objeto cobrir o conteiner mantendo sua proporção, contudo tende a cortar a imagem se ficar menor.
+
+## object-position
+
+Define como a imagem vai ser cortada em uma situação que ela é diminuida.
+
+## max-width
+
+Define o valor de largura másima de um elemento, abaixo desse valor o objeto é diminuido.
+Utilizado em textos para manter eles em um tamanho ideal, se utiliza a unidade ch.
+
+## transition
+
+Faz com que algumas transições de cores e bordas sejam mais suaves, um exemplo seria quando damos hover em um botão.
+
 # Top Right Bottom Left
 
 No caso de algumas estilizações como margin, padding e border, podemos querer valores diferentes em diferentes extremidades do elemento.
 Com duas variaveis a aplicação será: margin top/bottom right/left.
 Com quatro variaveis a aplicação será: margin top right bottom left.
+
+# Pseudo class
+
+## tag:hover
+
+Altera o elemento quando em cima do elemento.
+
+## tag:focus
+
+Altera o elemento quando o está em foco, quando damos tab e passamos pelo elemento.
+
+## tag:active
+
+Altera o elemento quando foi ativado no caso clicado.
+
+## tag:visited
+
+Altera um link no qual já foi visitado, sobreescreve as outras pseudo classes.
+
+## tag:first-child
+
+Seleciona o primeiro elemento de uma lista ordenada.
+
+## tag:last-child
+
+Seleciona o ultimo elemento de uma lista ordenada.
+
+## tag:nth-child(VALUE)
+
+Seleciona o filho de nume passado pelo valor, tambem se pode usar odd ou even para pares e impares.
+
+## tag:not()
+
+Retira s elementos passados a ele.
 
 # Pseudo element
 
@@ -269,10 +343,6 @@ Estiliza a primeira linha.
 ## tag::firstletter{}
 
 Estiliza a primeira letra.
-
-## tag:hover
-
-Altera o elmento quando hover.
 
 ## content
 
@@ -375,6 +445,14 @@ Similar ao grid-column mas para as linhas ao inves de colunas
 
 Define o grid-column e grid-row no mesmo atributo, grid-area: column / row;
 
+## Responsividade
+
+```css
+grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+```
+
+Utilizando repeat e auto-fit com um valor fixo podemos criar responsividade, e com o minmax(valor_fixo, 1 fr); no valor de reapet retiramos o problema de quando tiver mais espaço que o nescessario do valor fixo ele ocupará 1fr.
+
 # flex
 
 Defina display: flex;
@@ -422,6 +500,8 @@ Se ele não tiver um elemento pai com position: relative; ele tratará seu ponto
 
 Define a sobreposição de elementos, qual irá ficar por cima e qual por baixo, naturalmento o html segue a ordem no qual as tags foram escritas, contudo utilizando z-index podemos ter um controle sobre isso, o elemento de valor maior ficará no topo e o de menor abaixo.
 
+# Responsividade
+
 # img fill grid container
 
 Tendo uma imagem dentro de um grid naturalmente ela nao ocupará todo o espaço por padrão, então envolvemos em uma div com as configurações abaixo.
@@ -454,3 +534,7 @@ border: 2px solid transparent;
 tag:hover {
 border: 2px solid #ee2211;
 }
+
+# alinhar bloco de tamanho maximo definido no centro da tela
+
+Se pode utilizar o margin: 0 auto; com as margens laterais no automatico isso centraliza.
